@@ -1,0 +1,105 @@
+{
+    "capital": 999.8982770163828,
+    "positions": [
+        {
+            "symbol": "CHIPUSDT",
+            "entry_price": 0.06493,
+            "quantity": 154.01201293700908,
+            "highest_price": 0.06493,
+            "break_even_active": false
+        }
+    ],
+    "trades": [
+        {
+            "symbol": "CHIPUSDT",
+            "entry_price": 0.06421,
+            "exit_price": 0.06413,
+            "result": -0.012459118517364387,
+            "timestamp": "2026-05-12 19:13:36.795552"
+        },
+        {
+            "symbol": "PEPEUSDT",
+            "entry_price": 4.18e-06,
+            "exit_price": 4.18e-06,
+            "result": 0.0,
+            "timestamp": "2026-05-12 19:14:03.835684"
+        },
+        {
+            "symbol": "CHIPUSDT",
+            "entry_price": 0.06419,
+            "exit_price": 0.06417,
+            "result": -0.0031157501168394214,
+            "type": "BREAK_EVEN",
+            "timestamp": "2026-05-12 19:20:32.782566"
+        },
+        {
+            "symbol": "TONUSDT",
+            "entry_price": 2.342,
+            "exit_price": 2.342,
+            "result": 0.0,
+            "type": "BREAK_EVEN",
+            "timestamp": "2026-05-12 19:20:55.591854"
+        },
+        {
+            "symbol": "CHIPUSDT",
+            "entry_price": 0.06432,
+            "exit_price": 0.06446,
+            "result": 0.021766169154229048,
+            "type": "TRAILING_STOP",
+            "timestamp": "2026-05-12 19:28:47.658857"
+        },
+        {
+            "symbol": "CHIPUSDT",
+            "entry_price": 0.06477,
+            "exit_price": 0.06437,
+            "result": -0.06175698625907019,
+            "type": "TRAILING_STOP",
+            "timestamp": "2026-05-12 19:30:11.165497"
+        },
+        {
+            "symbol": "ZECUSDT",
+            "entry_price": 569.73,
+            "exit_price": 566.28,
+            "result": -0.06055499973671819,
+            "type": "TRAILING_STOP",
+            "timestamp": "2026-05-12 19:31:08.465156"
+        },
+        {
+            "symbol": "SAGAUSDT",
+            "entry_price": 0.04998,
+            "exit_price": 0.05013,
+            "result": 0.030012004801921628,
+            "timestamp": "2026-05-12 20:10:46.536604"
+        },
+        {
+            "symbol": "SAGAUSDT",
+            "entry_price": 0.05016,
+            "exit_price": 0.05081,
+            "result": 0.12958532695374755,
+            "timestamp": "2026-05-12 20:13:39.540194"
+        },
+        {
+            "symbol": "SAGAUSDT",
+            "entry_price": 0.05096,
+            "exit_price": 0.05003,
+            "result": -0.18249607535321827,
+            "timestamp": "2026-05-12 20:20:33.662825"
+        },
+        {
+            "symbol": "ZECUSDT",
+            "entry_price": 571.1,
+            "exit_price": 573.23,
+            "result": 0.037296445456137195,
+            "timestamp": "2026-05-12 20:35:10.262211"
+        }
+    ],
+    "pending_signals": [],
+    "SELECTED_SYMBOLS": [
+        "CHIPUSDT",
+        "SAGAUSDT"
+    ],
+    "POSITION_VALUE": null,
+    "BOT_PAUSED": false,
+    "TAKE_PROFIT": 5.0,
+    "STOP_LOSS": 1.0
+}

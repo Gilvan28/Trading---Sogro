@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trading Bot Pro</title>
+    <link rel="stylesheet" href="Tela-principal.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>🚀 Trading Bot Pro</h1>
+
+<div class="grid">
+
+    <div class="card">
+        <h2>Status</h2>
+        <p>Capital: R$ <span id="capital">...</span></p>
+        <p>Posição: <span id="position">...</span></p>
+        <p>Moeda: <span id="symbol">...</span></p>
+
+        <p>Lucro da Posição: <span id="positionProfit"></span></p>
+        <p>Variação: <span id="variation"></span></p>
+        <p>Entrada: <span id="entryPrice"></span></p>
+        <p>Resultado: <span id="currentPrice"></span></p>
+        <p>Valor Atual: R$ <span id="positionValue"></span></p>
+        <p>Break-even: <span id="breakEven">OFF</span></p>
+
+
+        <p>Lucro Atual: R$ <span id="profitValue">0</span></p>
+
+        <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+        </div>
+    </div>
+
+    <div class="card signal-card" id="signalCard">
+        <h2>🔔 Sinal</h2>
+        <p id="signalText">Sem sinal</p>
+        <button onclick="confirmTrade()">Confirmar Trade</button>
+        <button onclick="closePosition()">⏸ Fechar  Posição</button>
+    </div>
+
+  <div id="tradesContainer" class="trades-grid"></div>
+
+    <div class="card">
+        <h2>📊 Trades</h2>
+        <div id="tradeList"></div>
+    </div>
+
+    <div class="card">
+        <h2>🔥 Top Moedas do Dia</h2>
+        <div id="marketContainer">
+
+            <div id="bestCoins">
+                <h3>🔥 Melhores</h3>
+                <div id="bestCoinsList"></div>
+            </div>
+
+            <div id="allCoins">
+                <h3>📊 Mercado</h3>
+                <div id="topCoins"></div>
+            </div>
+            
+
+        </div>
+    </div>
+
+    
+
+     <div class="card">
+        <h2>Preço da Moeda</h2>
+        <canvas id="priceChart"></canvas>
+    </div>
+
+        <div class="card">
+        <h2>⚙️ Controle</h2>
+
+        <div class="input-group">
+            <label>Moeda 1</label>
+            <input type="text" id="symbol1" placeholder="BTCUSDT">
+        </div>
+
+        <div class="input-group">
+            <label>Moeda 2</label>
+            <input type="text" id="symbol2" placeholder="ETHUSDT">
+        </div>
+
+        <div class="input-group">
+            <label>Modo</label>
+            <select id="riskMode">
+                <option value="conservador">🟢 Conservador</option>
+                <option value="moderado">🟡 Moderado</option>
+                <option value="agressivo">🔴 Agressivo</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Valor (R$)</label>
+            <input type="number" id="positionValueInput" placeholder="100">
+        </div>
+
+        <div class="preview-box">
+
+        <div class="preview-item">
+            <span>💰 Operação</span>
+            <strong id="previewValue">-</strong>
+        </div>
+
+        <div class="preview-item">
+            <span>🎯 Take (auto)</span>
+            <strong id="takeValue">-</strong>
+        </div>
+
+        <input id="takeInput" placeholder="✏️ Take manual">
+
+        <div class="preview-item">
+            <span>🛑 Stop (auto)</span>
+            <strong id="stopValue">-</strong>
+        </div>
+
+        <input id="stopInput" placeholder="✏️ Stop manual">
+
+    </div>
+
+        <button onclick="updateControl()" class="btn-primary">
+            🚀 Aplicar Estratégia
+        </button>
+    </div>
+
+    <!-- 🔥 AGORA SIM separado -->
+    <div class="card">
+        <h2>🔥 Moedas Quentes</h2>
+        <div id="hotCoins"></div>
+    </div>
+</div>
+
+
+<script src="Tela-principal.js"></script>
+<canvas id="capitalChart"></canvas>
+</body>
+</html>

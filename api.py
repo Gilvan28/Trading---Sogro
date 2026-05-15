@@ -54,6 +54,13 @@ class ControlUpdate(BaseModel):
     stop_loss: float | None = None
 
 # =========================
+
+from fastapi.responses import FileResponse
+
+@app.get("/")
+def home():
+    return FileResponse("/root/Trading---Sogro/Tela-principal.html")
+
 @app.get("/status")
 def get_status():
 
@@ -258,9 +265,3 @@ def hot_coins():
         print("Erro hot_coins:", e)
         return []
     
-
-    from fastapi.responses import FileResponse
-
-    @app.get("/")
-    def home():
-        return FileResponse("Tela-principal.html")

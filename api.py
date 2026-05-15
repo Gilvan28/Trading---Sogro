@@ -257,3 +257,10 @@ def hot_coins():
     except Exception as e:
         print("Erro hot_coins:", e)
         return []
+    
+
+    from fastapi.responses import FileResponse
+
+    @app.get("/")
+    def home():
+        return FileResponse("Tela-principal.html")

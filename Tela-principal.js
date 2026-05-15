@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "http://147.93.186.116:8000";
 
 let tradeCharts = {};
 let tradeHistories = {};
